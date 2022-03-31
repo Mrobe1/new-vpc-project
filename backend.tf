@@ -1,7 +1,8 @@
 terraform {
   backend "s3" {
     bucket = "talent-mike-states"
-    key    = "sprint1/week2/training-terraform/terraform.tfstates"
+    key    = "Users/michael.roberts/Documents/Cloudreach/Repositories/Labs/training-vpc-lab/new-vpc-project/.terraform/terraform.tfstate"
+    # DynamoDB can be used for locking terraform state file to avoid collisions
     dynamodb_table = "terraform-lock"
   }
 }
